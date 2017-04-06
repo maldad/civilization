@@ -26,7 +26,7 @@ public class OfiExplorador implements Oficio {
                 System.out.println("Aliando Encontrado!!");
             }
         }
-        System.out.println("Acampando para descansar...");
+        System.out.println(b.getName()+" acampará para descansar...");
         System.out.println(" ");
         System.out.println("----------------------------------------------------");
         System.out.println(" ");

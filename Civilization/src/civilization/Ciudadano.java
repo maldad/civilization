@@ -2,15 +2,29 @@ package civilization;
 /*
  * @author maldad
  */
-public abstract class Ciudadano {
+public abstract class Ciudadano extends Civilizacion {
     protected Oficio oficio;
-    protected int HP;
+    protected String name;
+    protected int hp;
     protected int atk;
     protected int def;
-    public Ciudadano(int x, int y, int z){
-        HP = x;
-        atk = y;
-        def = z;
+    public Ciudadano(String name,int hp, int atk, int def){
+        this.name = name;
+        this.hp = hp;
+        this.atk = atk;
+        this.def = def;
+    }
+    public String getName(){
+        return name;
+    }
+    public int getHp(){
+        return hp;
+    }
+    public int getAtk(){
+        return atk;
+    }
+    public int getDef(){
+        return def;
     }
     public void mostrar(){    }
     public void comparar(){    }

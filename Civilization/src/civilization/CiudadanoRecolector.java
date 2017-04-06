@@ -11,8 +11,8 @@ package civilization;
  */
 public class CiudadanoRecolector extends Ciudadano{
     private int capacidad= 10;
-    public CiudadanoRecolector(int x, int y, int z) {
-        super(x, y, z);
+    public CiudadanoRecolector(String name, int hp, int atk, int def) {
+        super(name, hp, atk, def);
         oficio= new OfiRecolector();
     }
     

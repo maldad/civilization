@@ -16,7 +16,7 @@ public class OfiRecolector implements Oficio {
         CiudadanoRecolector b=(CiudadanoRecolector)a;
         for(int i=0;i<=b.getCapacidad();i++){
             if(i==b.getCapacidad()){
-                System.out.println("Lleno, Regresando al almacen..");
+                System.out.println(b.getName() + " No puede cargar mas, regresara al almacen..");
                 System.out.println(" ");
                 System.out.println("----------------------------------------------------");
                 System.out.println(" ");

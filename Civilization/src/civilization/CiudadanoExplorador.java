@@ -11,8 +11,8 @@ package civilization;
  */
 public class CiudadanoExplorador extends Ciudadano{
     private int stamina=10;
-    public CiudadanoExplorador(int x, int y, int z) {
-        super(x, y, z);
+    public CiudadanoExplorador(String name, int hp, int atk, int def) {
+        super(name, hp, atk, def);
         oficio= new OfiExplorador();
     }
     public void mostrar(){

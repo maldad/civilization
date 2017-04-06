@@ -22,7 +22,7 @@ public class OfiGuerrero implements Oficio {
                 System.out.println("Camina de PuntoB a PuntoA");
             }
         }
-        System.out.println("Cansado, Ir a Dormir");
+        System.out.println(b.getName()+ " termino su turno, irá a Dormir");
         System.out.println(" ");
         System.out.println("----------------------------------------------------");
         System.out.println(" ");
