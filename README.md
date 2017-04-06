@@ -52,13 +52,22 @@ Desde los inicios del uso doméstico de las computadoras los usuarios las han ut
           △                                       | CiudadanoRecolector          |
           |                                       |——————————————————————————————|
           |                                       | — capacidad : int            |
-|——————————————————————————————|                  |——————————————————————————————|
-| CiudadanoGuerrero            |                  | CiudadanoRecolector(x : int, |
-|——————————————————————————————|                  | y : int, z : int)            |
-| — stamina : int              |                  |——————————————————————————————|
-|——————————————————————————————|                  | + mostrar    : void          |
-| CiudadanoGuerrero(x : int,   |                  | + getCapacidad : int         |
-| y : int, z : int)            |                  |——————————————————————————————|
+          |                                       |——————————————————————————————|
+          |                                       | CiudadanoRecolector(x : int, |
+          |                                       | y : int, z : int)            |
+          |                                       |——————————————————————————————|
+          |                                       | + mostrar    : void          |
+          |                                       | + getCapacidad : int         |
+          |                                       |——————————————————————————————|
+          |
+          |
+|——————————————————————————————|
+| CiudadanoGuerrero            |
+|——————————————————————————————|
+| — stamina : int              |
+|——————————————————————————————|
+| CiudadanoGuerrero(x : int,   |
+| y : int, z : int)            |
 |——————————————————————————————|
 | + mostrar    : void          |
 | + getStamina : int           |
