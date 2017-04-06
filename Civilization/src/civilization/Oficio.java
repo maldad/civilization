@@ -10,5 +10,5 @@ package civilization;
  * @author maldad
  */
 public interface Oficio {
-    
+    public void trabajar(Ciudadano a);
 }

@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package civilization;
-
-/**
- *
+/*
  * @author maldad
  */
-public class Ciudadano {
+public abstract class Ciudadano {
+    protected Oficio oficio;
+    protected int HP;
+    protected int atk;
+    protected int def;
+    public Ciudadano(int x, int y, int z){
+        HP = x;
+        atk = y;
+        def = z;
+    }
+    public void mostrar(){    }
+    public void comparar(){    }
+    public void ejeOficio (Ciudadano objC){
+        oficio.trabajar(objC);
+    }
     
 }
