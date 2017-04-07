@@ -35,9 +35,11 @@ public class Main {
         
         Waitress waitress = new Waitress(allBuilds);
         waitress.printBuilds();
-        
+                /*
+
         CiudadanoRecolector rec1= (CiudadanoRecolector)almacen.getChild(0);
         rec1.mostrar();
+        rec1.setOficio(new DecRecolector(rec1.getOficio()));
         rec1.ejeOficio(rec1);
         CiudadanoRecolector rec2= (CiudadanoRecolector)almacen.getChild(1);
         rec2.mostrar();
@@ -45,19 +47,26 @@ public class Main {
         CiudadanoRecolector rec3= (CiudadanoRecolector)almacen.getChild(2);
         rec3.mostrar();
         rec3.ejeOficio(rec3);
+        */
         
         CiudadanoGuerrero gue1= (CiudadanoGuerrero)armeria.getChild(0);
         gue1.mostrar();
+        gue1.setOficio(new DecGuerrero(gue1.getOficio()));
         gue1.ejeOficio(gue1);
+        
         CiudadanoGuerrero gue2= (CiudadanoGuerrero)armeria.getChild(1);
         gue2.mostrar();
         gue2.ejeOficio(gue2);
+        
         CiudadanoGuerrero gue3= (CiudadanoGuerrero)armeria.getChild(2);
         gue3.mostrar();
-        gue3.ejeOficio(gue1);
-        
+        gue3.ejeOficio(gue3);
+
+                /*
+
         CiudadanoExplorador exp1= (CiudadanoExplorador)torre.getChild(0);
         exp1.mostrar();
+        exp1.setOficio(new DecGuerrero(exp1.getOficio()));
         exp1.ejeOficio(exp1);
         CiudadanoExplorador exp2= (CiudadanoExplorador)torre.getChild(1);
         exp2.mostrar();
@@ -65,5 +74,6 @@ public class Main {
         CiudadanoExplorador exp3= (CiudadanoExplorador)torre.getChild(2);
         exp3.mostrar();
         exp3.ejeOficio(exp3);
+*/
     }
 }

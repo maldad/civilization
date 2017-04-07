@@ -9,24 +9,21 @@ package civilization;
  *
  * @author maldad
  */
-public class DecGuerrero extends DecMejora {
-
-  public DecGuerrero(Oficio oficio){
+public class DecRecolector extends DecMejora {
+    
+  public DecRecolector(Oficio oficio){
     super(oficio);
   }
 
   @Override
   public void trabajar(Ciudadano c){
-    c.setStamina(5);
     oficio.trabajar(c);
+    incrementaCapacidad(c);
   }
-
-  /*
-  public void incrementaStamina(Oficio o){
-    //System.out.println(c.getStamina());
-    //c.setStamina(5);
-    o.trabajar(Ciudadano c);
-    //System.out.println(c.getStamina());
+  
+  public void incrementaCapacidad(Ciudadano c){
+      System.out.println(c.getCapacidad());
+      //c.setCapacidad(5);
+      System.out.println(c.getCapacidad());
   }
-*/
 }

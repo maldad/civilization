@@ -11,4 +11,17 @@ package civilization;
  */
 public class DecExplorador extends DecMejora {
     
+  public DecExplorador(Oficio oficio){
+    super(oficio);
+  }
+
+  @Override
+  public void trabajar(Ciudadano c){
+    oficio.trabajar(c);
+    incrementaStamina(c);
+  }
+
+  public void incrementaStamina(Ciudadano c){
+    c.setStamina(50);
+  }
 }
