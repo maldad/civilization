@@ -32,16 +32,32 @@ public class Civilizacion implements Sujeto {
         throw new UnsupportedOperationException();
     }
 
-    public String getDescription() {
+    public int getHp() {
         throw new UnsupportedOperationException();
     }
 
-    public double getPrice() {
+    public int getAtk() {
         throw new UnsupportedOperationException();
     }
+    
+    public int getDef() {
+        throw new UnsupportedOperationException();
+    }
+    
+    public int getStamina() {
+        throw new UnsupportedOperationException();
+    }
+    
+    public int getCapacidad() {
+        throw new UnsupportedOperationException();
+    }
+    //public void ejeOficio(){
+    //}
+    //public void mostrar(){
+    //}
 
     public void print() {
-        throw new UnsupportedOperationException();
+        //throw new UnsupportedOperationException();
     }
    
     

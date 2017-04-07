@@ -18,7 +18,7 @@ public class OfiRecolector implements Oficio {
             if(i==b.getCapacidad()){
                 System.out.println(b.getName() + " No puede cargar mas, regresara al almacen..");
                 System.out.println(" ");
-                System.out.println("----------------------------------------------------");
+                System.out.println("----------------------------------------------------------------------");
                 System.out.println(" ");
             }
         }

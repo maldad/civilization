@@ -28,7 +28,7 @@ public class OfiExplorador implements Oficio {
         }
         System.out.println(b.getName()+" acampará para descansar...");
         System.out.println(" ");
-        System.out.println("----------------------------------------------------");
+        System.out.println("----------------------------------------------------------------------");
         System.out.println(" ");
     }
     

@@ -24,7 +24,7 @@ public class OfiGuerrero implements Oficio {
         }
         System.out.println(b.getName()+ " termino su turno, irá a Dormir");
         System.out.println(" ");
-        System.out.println("----------------------------------------------------");
+        System.out.println("----------------------------------------------------------------------");
         System.out.println(" ");
     }
     
