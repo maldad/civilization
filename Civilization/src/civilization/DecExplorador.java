@@ -17,11 +17,7 @@ public class DecExplorador extends DecMejora {
 
   @Override
   public void trabajar(Ciudadano c){
+    c.setStamina(5);
     oficio.trabajar(c);
-    incrementaStamina(c);
-  }
-
-  public void incrementaStamina(Ciudadano c){
-    c.setStamina(50);
   }
 }

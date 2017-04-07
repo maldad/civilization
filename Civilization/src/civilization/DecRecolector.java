@@ -17,13 +17,8 @@ public class DecRecolector extends DecMejora {
 
   @Override
   public void trabajar(Ciudadano c){
+    c.setCapacidad(5);
     oficio.trabajar(c);
-    incrementaCapacidad(c);
   }
-  
-  public void incrementaCapacidad(Ciudadano c){
-      System.out.println(c.getCapacidad());
-      //c.setCapacidad(5);
-      System.out.println(c.getCapacidad());
-  }
+
 }

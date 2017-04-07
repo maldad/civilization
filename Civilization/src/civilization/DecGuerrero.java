@@ -20,13 +20,4 @@ public class DecGuerrero extends DecMejora {
     c.setStamina(5);
     oficio.trabajar(c);
   }
-
-  /*
-  public void incrementaStamina(Oficio o){
-    //System.out.println(c.getStamina());
-    //c.setStamina(5);
-    o.trabajar(Ciudadano c);
-    //System.out.println(c.getStamina());
-  }
-*/
 }

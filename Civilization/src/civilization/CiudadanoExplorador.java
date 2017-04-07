@@ -29,11 +29,10 @@ public class CiudadanoExplorador extends Ciudadano{
     }
     
     public void setOficio(Oficio o){
-      oficio = (OfiExplorador)o;
+      oficio = o;
     }
     
-    //@Override
-    public OfiExplorador getOficio(){
-        return (OfiExplorador)oficio;
+    public Oficio getOficio(){
+        return oficio;
     }
 }

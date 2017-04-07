@@ -26,9 +26,7 @@ public abstract class Ciudadano extends Civilizacion {
     public int getDef(){
         return def;
     }
-//    public void setOficio(Oficio o){ //para mejorar el oficio actual mediante Decorador
 
-  //  }
     public void mostrar(){    }
     public void ejeOficio (Ciudadano objC){
         oficio.trabajar(objC);
@@ -36,13 +34,9 @@ public abstract class Ciudadano extends Civilizacion {
     public void setStamina(int s){
         
     }
-    //public void setCapacidad(int s){
+    public void setCapacidad(int s){
         
-    //}
-    
-    //public Oficio getOficio(){
-      //return oficio;
-    //}
+    }
 
     public void print() {
         System.out.println("Nombre: " + getName());

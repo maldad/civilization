@@ -17,17 +17,16 @@ public class CiudadanoRecolector extends Ciudadano{
         return capacidad;
     }
 
-    //@Override
-    //public void setCapacidad(int s){
-      //  capacidad += s;
-    //}
+    public void setCapacidad(int s){
+        capacidad += s;
+    }
     
     public void setOficio(Oficio o){
-      oficio = (OfiRecolector)o;
+      oficio = o;
     }
     
     //@Override
-    public OfiRecolector getOficio(){
-        return (OfiRecolector)oficio;
+    public Oficio getOficio(){
+        return oficio;
     }
 }
