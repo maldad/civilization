@@ -29,30 +29,41 @@ public class Main {
         armeria.add(new CiudadanoGuerrero("Mona",15,30,25));
         armeria.add(new CiudadanoGuerrero("Quinn",15,30,25));
         
-        torre.add(new CiudadanoGuerrero("Edmont",20,15,20));
-        torre.add(new CiudadanoGuerrero("Mercedes",20,15,20));
-        torre.add(new CiudadanoGuerrero("Albert",20,15,20));
+        torre.add(new CiudadanoExplorador("Edmont",20,15,20));
+        torre.add(new CiudadanoExplorador("Mercedes",20,15,20));
+        torre.add(new CiudadanoExplorador("Albert",20,15,20));
         
         Waitress waitress = new Waitress(allBuilds);
         waitress.printBuilds();
         
-        System.out.println("\n#################\n#################\n");
-        System.out.println(torre.getChild(1));
-        System.out.println("Nombre: "+torre.getChild(1).getName()+" Vida: "+torre.getChild(1).getHp()+" Ataque: "+torre.getChild(1).getAtk()+" Defensa: "+torre.getChild(1).getDef());
-        torre.getChild(1);
+        CiudadanoRecolector rec1= (CiudadanoRecolector)almacen.getChild(0);
+        rec1.mostrar();
+        rec1.ejeOficio(rec1);
+        CiudadanoRecolector rec2= (CiudadanoRecolector)almacen.getChild(1);
+        rec2.mostrar();
+        rec2.ejeOficio(rec2);
+        CiudadanoRecolector rec3= (CiudadanoRecolector)almacen.getChild(2);
+        rec3.mostrar();
+        rec3.ejeOficio(rec3);
         
-        Ciudadano rec1=new CiudadanoRecolector("Alex",10, 10, 10);
-        System.out.println(rec1);
-        //rec1.mostrar();
-        //rec1.ejeOficio(rec1);
-        /*
-        Ciudadano exp1=new CiudadanoExplorador("Jhoana",10, 10, 10);
+        CiudadanoGuerrero gue1= (CiudadanoGuerrero)armeria.getChild(0);
+        gue1.mostrar();
+        gue1.ejeOficio(gue1);
+        CiudadanoGuerrero gue2= (CiudadanoGuerrero)armeria.getChild(1);
+        gue2.mostrar();
+        gue2.ejeOficio(gue2);
+        CiudadanoGuerrero gue3= (CiudadanoGuerrero)armeria.getChild(2);
+        gue3.mostrar();
+        gue3.ejeOficio(gue1);
+        
+        CiudadanoExplorador exp1= (CiudadanoExplorador)torre.getChild(0);
         exp1.mostrar();
         exp1.ejeOficio(exp1);
-        
-        Ciudadano gue1=new CiudadanoGuerrero("Alextrasda",10, 10, 10);
-        gue1.mostrar();
-        gue1.ejeOficio(gue1);*/
+        CiudadanoExplorador exp2= (CiudadanoExplorador)torre.getChild(1);
+        exp2.mostrar();
+        exp2.ejeOficio(exp2);
+        CiudadanoExplorador exp3= (CiudadanoExplorador)torre.getChild(2);
+        exp3.mostrar();
+        exp3.ejeOficio(exp3);
     }
-    
 }

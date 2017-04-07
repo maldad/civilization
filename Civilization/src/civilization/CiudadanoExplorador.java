@@ -16,7 +16,7 @@ public class CiudadanoExplorador extends Ciudadano{
         oficio= new OfiExplorador();
     }
     public void mostrar(){
-        System.out.println("Explorando Area... ");
+        System.out.println(this.name+" comienza exploracion del Area... ");
     }
     
     public int getStamina(){

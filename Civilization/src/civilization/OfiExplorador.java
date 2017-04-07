@@ -23,7 +23,7 @@ public class OfiExplorador implements Oficio {
                 System.out.println("ENEMIGO ENCONTRADO!!");
             }
             if(posi>95){
-                System.out.println("Aliando Encontrado!!");
+                System.out.println("Aliado Encontrado!!");
             }
         }
         System.out.println(b.getName()+" acampará para descansar...");

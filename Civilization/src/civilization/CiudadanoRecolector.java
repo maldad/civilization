@@ -10,7 +10,7 @@ public class CiudadanoRecolector extends Ciudadano{
     }
     
     public void mostrar(){
-        System.out.println("Recolectando... ");
+        System.out.println(this.name+" comienza la recoleccion de recursos... ");
     }
     
     public int getCapacidad(){

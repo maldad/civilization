@@ -9,7 +9,7 @@ public class CiudadanoGuerrero extends Ciudadano{
         oficio= new OfiGuerrero();
     }
     public void mostrar(){
-        System.out.println("Vigilando Perimetro... ");
+        System.out.println(this.name+" comienza la vigilancia del perimetro... ");
     }
     public int getStamina(){
         return stamina;

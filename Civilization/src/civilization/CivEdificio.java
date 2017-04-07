@@ -18,11 +18,6 @@ public class CivEdificio extends Civilizacion {
 
     public void add(Civilizacion civilizacion) {
         edificioComponents.add(civilizacion);
-        if(civilizacion instanceof Ciudadano 
-                || civilizacion instanceof CiudadanoGuerrero 
-                || civilizacion instanceof CiudadanoExplorador){
-            this.numElementos+=civilizacion.numElementos;
-        }
     }
 
     public void remove(Civilizacion civilizacion) {
@@ -30,12 +25,16 @@ public class CivEdificio extends Civilizacion {
     }
 
     public int getNumElementos(){
-        return numElementos;
+        return edificioComponents.size();
     }
     public Ciudadano getChild(int i) {
         return (Ciudadano) edificioComponents.get(i);
     }
-
+    
+    //public CiudadanoRecolector getChild(int i) {
+        //return (CiudadanoRecolector) edificioComponents.get(i);
+    //}
+    
     public String getName() {
         return name;
     }
@@ -43,16 +42,16 @@ public class CivEdificio extends Civilizacion {
     public String getDescription() {
         return description;
     }
-    public int getCapasidad(){
-        return capacidad;
+    public int getCapacidad(){
+        return capacidad-getNumElementos();
     }
 
     public void print() {
         System.out.println("\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
         System.out.println(getName());
         System.out.println("\n" + getDescription());
-        System.out.println("Capasidad: " + getCapasidad());
-        System.out.println("Numero de elementos: "+numElementos);
+        System.out.println("Capacidad: " + getCapacidad()+"/"+capacidad);
+        System.out.println("Numero de elementos: "+getNumElementos());
         System.out.println("----------------------------------------------------------------------");
 
         Iterator it = edificioComponents.iterator();
