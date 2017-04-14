@@ -18,6 +18,7 @@ public class DecRecolector extends DecMejora {
   @Override
   public void trabajar(Ciudadano c){
     c.setCapacidad(5);
+    c.setRetraso(50);
     oficio.trabajar(c);
   }
 

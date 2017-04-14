@@ -26,18 +26,17 @@ public abstract class Ciudadano extends Civilizacion {
     public int getDef(){
         return def;
     }
-
-    public void mostrar(){    }
+   
     public void ejeOficio (Ciudadano objC){
         oficio.trabajar(objC);
     }
-    public void setStamina(int s){
-        
-    }
-    public void setCapacidad(int s){
-        
-    }
-
+    public void setHp(int vidaPlus){}
+    public void setAtk(int ataquePlus){}
+    public void setDef(int defensaPlus){}
+    public void setStamina(int staminaPlus){}
+    public void setCapacidad(int capasidadPlus){}
+    public void setRetraso(int porcentajeRetraso){}
+    public void mostrar(){}
     public void print() {
         System.out.println("Nombre: " + getName());
         System.out.println("Vida: " + getHp());

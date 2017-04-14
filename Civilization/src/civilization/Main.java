@@ -10,14 +10,12 @@ package civilization;
  * @author Zidai
  */
 public class Main {
+    static Civilizacion allBuilds = new CivEdificio("Ciudad", "Todos los Edificios de la Ciudad",3);   
+    static Civilizacion almacen =new CivEdificio("ALMACEN", "Edifico para los Recolectores",10);
+    static Civilizacion armeria =new CivEdificio("ARMERIA", "Edifico para los Guerreros",10);
+    static Civilizacion torre   =new CivEdificio("CASA", "Edifico para los Exploradores",10);
     
-    public static void main(String[] args){
-        Civilizacion allBuilds = new CivEdificio("Ciudad", "Todos los Edificios de la Ciudad",3);
-        
-        Civilizacion almacen =new CivEdificio("ALMACEN", "Edifico para los Recolectores",10);
-        Civilizacion armeria =new CivEdificio("ARMERIA", "Edifico para los Guerreros",10);
-        Civilizacion torre   =new CivEdificio("CASA", "Edifico para los Exploradores",10);
-
+    public static void agregar(){
         allBuilds.add(almacen);
         allBuilds.add(armeria);
         allBuilds.add(torre);
@@ -36,7 +34,9 @@ public class Main {
         
         Waitress waitress = new Waitress(allBuilds);
         waitress.printBuilds();
-
+    }
+    
+    public static void iniciar(){
         CiudadanoRecolector rec1= (CiudadanoRecolector)almacen.getChild(0);
         rec1.mostrar();
         rec1.setOficio(new DecRecolector(rec1.getOficio()));
@@ -76,5 +76,12 @@ public class Main {
         CiudadanoExplorador exp3= (CiudadanoExplorador)torre.getChild(2);
         exp3.mostrar();
         exp3.ejeOficio(exp3);
+    } 
+    public static void main(String[] args){
+        agregar();
+        iniciar();
+        
+
+        
     }
 }

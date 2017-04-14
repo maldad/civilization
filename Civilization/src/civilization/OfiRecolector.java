@@ -5,6 +5,9 @@
  */
 package civilization;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author maldad
@@ -14,7 +17,6 @@ public class OfiRecolector implements Oficio {
     @Override
     public void trabajar(Ciudadano a) {
         CiudadanoRecolector b=(CiudadanoRecolector)a;
-        System.out.println(b.getCapacidad());
         for(int i=0;i<=b.getCapacidad();i++){
             if(i==b.getCapacidad()){
                 System.out.println(b.getName() + " No puede cargar mas, regresara al almacen..");
@@ -22,10 +24,13 @@ public class OfiRecolector implements Oficio {
                 System.out.println("----------------------------------------------------------------------");
                 System.out.println(" ");
             }else{
-                System.out.println("Recolectando... " + i);
+                try {
+                    Thread.sleep(b.getRetraso());
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(b.getName(), null);
+                }
+                System.out.println("Recolectando... " + (i+1)+ " de " +b.getCapacidad() );
             }
         }
-        
     }
-    
 }
