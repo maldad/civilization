@@ -2,6 +2,7 @@ package civilization;
 /*
  * @author Zidai
  */
+import javax.accessibility.Accessible;
 public class CiudadanoRecolector extends Ciudadano{
     private int capacidad= 5;
     private int retraso=1000;
@@ -10,7 +11,8 @@ public class CiudadanoRecolector extends Ciudadano{
         oficio= new OfiRecolector();
     }
     public void mostrar(){
-        System.out.println(this.name+" comienza la recoleccion de recursos... ");
+        //System.out.println(this.name+" comienza la recoleccion de recursos... ");
+        FrameCivilizacion.jTextArea4.append(this.name+" comienza la recoleccion de recursos... \n");
     }
     public int getCapacidad(){
         return capacidad;

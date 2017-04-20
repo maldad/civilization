@@ -19,17 +19,22 @@ public class OfiRecolector implements Oficio {
         CiudadanoRecolector b=(CiudadanoRecolector)a;
         for(int i=0;i<=b.getCapacidad();i++){
             if(i==b.getCapacidad()){
-                System.out.println(b.getName() + " No puede cargar mas, regresara al almacen..");
-                System.out.println(" ");
-                System.out.println("----------------------------------------------------------------------");
-                System.out.println(" ");
+                //System.out.println(b.getName() + " No puede cargar mas, regresara al almacen..");
+                FrameCivilizacion.jTextArea4.append(b.getName() + " No puede cargar mas, regresara al almacen..\n");
+                //System.out.println(" ");
+                FrameCivilizacion.jTextArea4.append(" \n");
+                //System.out.println("----------------------------------------------------------------------");
+                FrameCivilizacion.jTextArea4.append("----------------------------------------------------------------------\n");
+                //System.out.println(" ");
+                FrameCivilizacion.jTextArea4.append(" \n");
             }else{
                 try {
                     Thread.sleep(b.getRetraso());
                 } catch (InterruptedException ex) {
                     Logger.getLogger(b.getName(), null);
                 }
-                System.out.println("Recolectando... " + (i+1)+ " de " +b.getCapacidad() );
+                //System.out.println("Recolectando... " + (i+1)+ " de " +b.getCapacidad() );
+                FrameCivilizacion.jTextArea4.append("Recolectando... " + (i+1)+ " de " +b.getCapacidad()+"\n");
             }
         }
     }
