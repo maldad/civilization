@@ -47,12 +47,12 @@ public class CivEdificio extends Civilizacion {
     }
 
     public void print() {
-        System.out.println("\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
-        System.out.println(getName());
-        System.out.println("\n" + getDescription());
-        System.out.println("Capacidad: " + getCapacidad()+"/"+capacidad);
-        System.out.println("Numero de elementos: "+getNumElementos());
-        System.out.println("----------------------------------------------------------------------");
+        FrameCivilizacion.jTextArea1.append("\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n");
+        FrameCivilizacion.jTextArea1.append(getName() + "\n");
+        FrameCivilizacion.jTextArea1.append(getDescription() + "\n");
+        FrameCivilizacion.jTextArea1.append("Capacidad: " + getCapacidad()+"/"+capacidad + "\n");
+        FrameCivilizacion.jTextArea1.append("Numero de elementos: "+getNumElementos() + "\n");
+        FrameCivilizacion.jTextArea1.append("----------------------------------------------------------------------\n");
 
         Iterator it = edificioComponents.iterator();
         while(it.hasNext()) {

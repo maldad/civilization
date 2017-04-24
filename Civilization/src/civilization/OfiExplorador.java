@@ -21,18 +21,26 @@ public class OfiExplorador implements Oficio {
         for(int i=0;i<=b.getStamina();i++){
             int posi= rand.nextInt(100);
             if(posi<5){
-                System.out.println("ENEMIGO ENCONTRADO!!");
+                //System.out.println("ENEMIGO ENCONTRADO!!");
+                FrameCivilizacion.jTextArea6.append("ENEMIGO ENCONTRADO!!\n");
             }
             if(posi>96){
-                System.out.println("Aliado Encontrado!!");
+                //System.out.println("Aliado Encontrado!!");
+                FrameCivilizacion.jTextArea6.append("Aliado Encontrado!!\n");
+
             }else{
-                System.out.println("Energia consumida: " + i);
+                //System.out.println("Energia consumida: " + i);
+                FrameCivilizacion.jTextArea6.append("Energia consumida: " + i + "\n");
             }
         }
-        System.out.println(b.getName()+" acampará para descansar...");
-        System.out.println(" ");
-        System.out.println("----------------------------------------------------------------------");
-        System.out.println(" ");
+        //System.out.println(b.getName()+" acampará para descansar...");
+        FrameCivilizacion.jTextArea6.append(b.getName()+" acampará para descansar...");
+        //System.out.println(" ");
+        FrameCivilizacion.jTextArea6.append("\n");
+        //System.out.println("----------------------------------------------------------------------");
+        FrameCivilizacion.jTextArea6.append("----------------------------------------------------------------------");
+        //System.out.println(" ");
+        FrameCivilizacion.jTextArea6.append("\n");
     }
     
 }

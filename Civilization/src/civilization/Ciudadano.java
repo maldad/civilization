@@ -38,11 +38,11 @@ public abstract class Ciudadano extends Civilizacion {
     public void setRetraso(int porcentajeRetraso){}
     public void mostrar(){}
     public void print() {
-        System.out.println("Nombre: " + getName());
-        System.out.println("Vida: " + getHp());
-        System.out.println("Ataque: " + getAtk());
-        System.out.println("Defensa: " + getDef());
-        System.out.println("======================================================================");
+        FrameCivilizacion.jTextArea1.append("Nombre: " + getName() + "\n");
+        FrameCivilizacion.jTextArea1.append("Vida: " + getHp() + "\n");
+        FrameCivilizacion.jTextArea1.append("Ataque: " + getAtk() + "\n");
+        FrameCivilizacion.jTextArea1.append("Defensa: " + getDef() + "\n");
+        FrameCivilizacion.jTextArea1.append("======================================================================\n");
     }
     
 }

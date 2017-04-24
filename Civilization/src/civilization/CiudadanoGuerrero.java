@@ -9,7 +9,9 @@ public class CiudadanoGuerrero extends Ciudadano{
         oficio= new OfiGuerrero();
     }
     public void mostrar(){
-        System.out.println(this.name+" comienza la vigilancia del perimetro... ");
+//        System.out.println(this.name+" comienza la vigilancia del perimetro... ");
+        FrameCivilizacion.jTextArea5.append(this.name+" comienza la vigilancia del perímetro... \n");
+
     }
     public int getStamina(){
         return stamina;
