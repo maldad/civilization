@@ -8,7 +8,6 @@ Uso de 5 Patrones de diseño en un proyecto.
 ### Planteamiento del problema.
 
 Desde los inicios del uso doméstico de las computadoras los usuarios las han utilizado para su entretenimiento a través de videojuegos, iniciando con juegos de simulación y estrategia primitivos en los que el objetivo es progreso de una civilización, en el caso de los videojuego de estrategia en tiempo real (RTS por sus siglas en ingles) el problema radica en programar la interacción del comportamiento de una civilización y los elementos que la conforman, con otras civilizaciones aledañas dentro del mundo del juego (Aliados y Enemigos).
-|——————————————————————————————|<br>
 
 ### Análisis.
 
@@ -35,54 +34,4 @@ Desde los inicios del uso doméstico de las computadoras los usuarios las han ut
 
 
 ### Diseño de la solución usando patrones de diseño.
-
-                        |———————————————————|                
-                        | Civilizacion      | 
-                        |———————————————————|
-                        | — nombre : String |
-                        | — color  : String |
-                        |———————————————————|
-
-
-      |———————————————————————————————|  
-      | Ciudadano                     |           |——————————————————————————————|
-      |———————————————————————————————| ◁———————— | CiudadanoExplorador          | 
-      | # oficio : Oficio             |           |——————————————————————————————|
-      | # HP     : int                |           | — stamina : int              |
-      | # atk    : int                |           |——————————————————————————————|
-      | # def    : int                |           | CiudadanoExplorador(x : int, |
-      |———————————————————————————————|           | y : int, z : int)            |
-      | + Ciudadano(x : int,          |           |——————————————————————————————| 
-      | y : int, z : int)             |           | + mostrar    : void          |
-      | + mostrar        : void       |           | + getStamina : int           |
-      | + comparar       : void       |           |——————————————————————————————|
-      | + ejeOficio(objC : Ciudadano) |
-      |———————————————————————————————| ◁———————— |——————————————————————————————| 
-          △                                       | CiudadanoRecolector          |
-          |                                       |——————————————————————————————|
-          |                                       | — capacidad : int            |
-          |                                       |——————————————————————————————|
-          |                                       | CiudadanoRecolector(x : int, |
-          |                                       | y : int, z : int)            |
-          |                                       |——————————————————————————————|
-          |                                       | + mostrar    : void          |
-          |                                       | + getCapacidad : int         |
-          |                                       |——————————————————————————————|
-          |
-          |
-|——————————————————————————————|
-| CiudadanoGuerrero            |
-|——————————————————————————————|
-| — stamina : int              |
-|——————————————————————————————|
-| CiudadanoGuerrero(x : int,   |
-| y : int, z : int)            |
-|——————————————————————————————|
-| + mostrar    : void          |
-| + getStamina : int           |
-|——————————————————————————————|
-
-
-
-
-
+![uml-civilization]("https://raw.githubusercontent.com/maldad/civilization/master/Civilization/src/civilization/uml.png" "Diagrama UML")
