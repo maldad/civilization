@@ -77,11 +77,4 @@ public class Main {
         exp3.mostrar();
         exp3.ejeOficio(exp3);
     } 
-    public static void main(String[] args){
-        agregar();
-        iniciar();
-        
-
-        
-    }
 }
