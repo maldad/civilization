@@ -34,4 +34,4 @@ Desde los inicios del uso doméstico de las computadoras los usuarios las han ut
 
 
 ### Diseño de la solución usando patrones de diseño.
-![uml-civilization]("https://raw.githubusercontent.com/maldad/civilization/master/Civilization/src/civilization/uml.png" "Diagrama UML")
+![uml-civilization](/Civilization/src/civilization/uml.png)
